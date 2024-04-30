@@ -1,0 +1,32 @@
+<app-tabla
+  [columnas]="columnas"
+  [data]="misTareas"
+  [titulo]="titulo"
+  (oninformacion)="recibirTareas($event)"
+></app-tabla>
+
+<form class="formulario col-4">
+  <div class="mb-3">
+    <label for="tarea" class="form-label">Tarea</label>
+    <input
+      type="text"
+      class="form-control"
+      name="tarea"
+      id="tarea"
+      [(ngModel)]="tarea"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="comentario" class="form-label">Comentario</label>
+    <input
+      type="text"
+      class="form-control"
+      name="comentario"
+      id="comentario"
+      [(ngModel)]="comentario"
+    />
+  </div>
+  <button type="button" class="btn btn-primary" (click)="agregarTareas()">
+    Agregar
+  </button>
+</form>

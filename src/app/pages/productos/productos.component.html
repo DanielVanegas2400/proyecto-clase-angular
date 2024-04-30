@@ -1,0 +1,8 @@
+<span>SKU: {{ informacion?.sku }}</span>
+
+<app-tabla
+  [columnas]="columnas"
+  [data]="misProductos"
+  [titulo]="titulo"
+  (oninformacion)="recibirInformacion($event)"
+></app-tabla>

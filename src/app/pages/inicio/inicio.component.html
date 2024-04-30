@@ -1,0 +1,50 @@
+<h1>Este es el componente nuevo - Inicio</h1>
+
+
+
+
+<button class="btn btn-secondary" (click)="cambioRuta()"><i class="fa-solid fa-plus"></i> Boton on Click</button> \\
+
+<button class="btn btn-primary" routerLink="/Persona"><i class="fa-solid fa-plus"></i>Personas </button> \\
+
+<button class="btn btn-success" routerLink="/home"> Home </button>\\
+
+<a class="btn btn-success" href="Persona"> <button class="btn btn-success">Mostrar personas</button> </a>\\
+
+<a class="btn btn-success" href="imagenes"> <button class="btn btn-success">Imagenes</button> </a>
+
+
+
+@if (mostrarTitulo) {
+<h2>Tabla personas</h2>
+}
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Edad</th>
+      <th>Ciudad</th>
+      <th>Documento</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    @for (persona of personas; track $index) {
+      <tr>
+        <td>
+          {{persona.nombre}}
+        </td>
+        <td>
+          {{persona.edad}}
+        </td>
+        <td>
+          {{persona.ciudad}}
+        </td>
+        <td>
+          {{persona.documento}}
+        </td>
+      </tr>
+    }
+
+  </tbody>
+</table>
