@@ -1,19 +1,26 @@
 <h1>Este es el componente nuevo - Inicio</h1>
 
+<button class="btn btn-secondary" (click)="cambioRuta()">
+  <i class="fa-solid fa-plus"></i> Boton on Click
+</button>
+\\
 
+<button class="btn btn-primary" routerLink="/Persona">
+  <i class="fa-solid fa-plus"></i>Personas
+</button>
+\\
 
+<button class="btn btn-success" routerLink="/home">Home</button>\\
 
-<button class="btn btn-secondary" (click)="cambioRuta()"><i class="fa-solid fa-plus"></i> Boton on Click</button> \\
+<a class="btn btn-success" href="Persona">
+  <button class="btn btn-success">Mostrar personas</button> </a
+>\\
 
-<button class="btn btn-primary" routerLink="/Persona"><i class="fa-solid fa-plus"></i>Personas </button> \\
+<a class="btn btn-success" href="imagenes">
+  <button class="btn btn-success">Imagenes</button>
+</a>
 
-<button class="btn btn-success" routerLink="/home"> Home </button>\\
-
-<a class="btn btn-success" href="Persona"> <button class="btn btn-success">Mostrar personas</button> </a>\\
-
-<a class="btn btn-success" href="imagenes"> <button class="btn btn-success">Imagenes</button> </a>
-
-
+<h1>Prueba Github</h1>
 
 @if (mostrarTitulo) {
 <h2>Tabla personas</h2>
@@ -30,21 +37,20 @@
 
   <tbody>
     @for (persona of personas; track $index) {
-      <tr>
-        <td>
-          {{persona.nombre}}
-        </td>
-        <td>
-          {{persona.edad}}
-        </td>
-        <td>
-          {{persona.ciudad}}
-        </td>
-        <td>
-          {{persona.documento}}
-        </td>
-      </tr>
+    <tr>
+      <td>
+        {{ persona.nombre }}
+      </td>
+      <td>
+        {{ persona.edad }}
+      </td>
+      <td>
+        {{ persona.ciudad }}
+      </td>
+      <td>
+        {{ persona.documento }}
+      </td>
+    </tr>
     }
-
   </tbody>
 </table>
