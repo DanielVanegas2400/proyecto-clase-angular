@@ -19,7 +19,7 @@ export const MenuRoutes: MenuInfoInterface[] = [
       {
         path: PATH.IMAGEN,
         title: 'Imagen 2',
-        icon: '',
+        icon: 'fa-regular fa-image',
         classCSS: '',
         submenu: [],
       },
