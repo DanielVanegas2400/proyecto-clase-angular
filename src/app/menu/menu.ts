@@ -20,7 +20,7 @@ export const MenuRoutes: MenuInfoInterface[] = [
         path: PATH.IMAGEN,
         title: 'Imagen 2',
         icon: 'fa-regular fa-image',
-        classCSS: '',
+        classCSS: 'd-flex justify-content-center align-items-center p-2',
         submenu: [],
       },
     ],
